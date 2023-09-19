@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './App.css';
-import About from "./components/About";
-import HeroBanner from "./components/HeroBanner";
-import TemporaryContainer from "./components/TemporaryContainer";
-import SelectedContainer from "./components/SelectedContainer";
-import PokemonList from "./components/PokemonList";
+import Header from "./components/Header";
+import PokemonDetails from "./components/PokemonDetails";
+import PokemonList from "./components/Pokebox";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -60,12 +58,11 @@ const App = () => {
 
   return (
       <div className="app">
-        <HeroBanner />
-        <About />
+        <Header />
         <div className="main-container"> 
-          {!selectedPokemon && <TemporaryContainer />}
+       
           {selectedPokemon && (
-            <SelectedContainer 
+            <PokemonDetails 
               selectedName={selectedPokemon.name}
               selectedID={selectedPokemon.id}
               selectedHeight={selectedPokemon.height}
