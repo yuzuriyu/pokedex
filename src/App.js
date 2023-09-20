@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './App.css';
+import './pokemon-details.css';
 import Header from "./components/Header";
 import PokemonDetails from "./components/PokemonDetails";
 import PokemonList from "./components/Pokebox";

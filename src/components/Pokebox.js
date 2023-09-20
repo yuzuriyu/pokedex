@@ -1,4 +1,3 @@
-import circle from '../images/circle.png';
 import pokeballBlack from '../images/pokeball--black.png';
 import pokeballWhite from '../images/pokeball--white.png';
 

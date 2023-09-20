@@ -1,17 +1,54 @@
+import pokeballWhite from '../images/pokeball--white.png';
+
+
 const PokemonDetails = (props) => {
+  console.log(props)
     return (
         <div className="pokemon-details__div">
-          <div className="selected-pokemon-details">
-            <h1>{props.capitalizeFirstLetter(props.selectedName)}</h1>
-            <p>No. {props.selectedID}</p>
-            <p>Height: {props.selectedHeight}</p>
-            <p>Weight: {props.selectedWeight}</p>
-            <h3>Abilities:</h3>
-            {props.selectedPokemon.abilities.map((abilityData, index) => <li key={index}>{abilityData.ability.name}</li>)}
-            <h3>Type: </h3>
-            {props.selectedPokemon.types.map((typeData, index) => <li key={index}>{typeData.type.name}</li>)}
+          <div className='pokemon-details__div--top-most'>
+            <div className="pokemon-details__div--icon-no">
+              <img 
+                src={props.selectedPokemon.sprites.front_default}
+                alt="pokemon sprite"
+              />
+                <h1>No. {props.selectedPokemon.id}</h1>
+              </div>
+              <h1>{props.selectedPokemon.name}</h1>
+                <img 
+                  className="pokeball--black" 
+                  src={pokeballWhite}
+                  alt="pokeball--black" 
+                />
           </div>
-          <img src={props.selectedPokemon.sprites.front_default} alt="selected-pokemon" />
+          <div className='pokemon-details__div--wrapper'>
+            <img src={props.selectedPokemon.sprites.front_default} alt='sprite' />
+          </div>
+          <div className='pokemon-details__div--details'>
+            <div className='pokemon-details__div--left'>
+              <p>Type</p>
+              <p>Height</p>
+              <p>Weight</p>
+            </div>
+            <div className='pokemon-details__div--right'>
+              <p>Grass</p>
+              <p>Height</p>
+              <p>Weight</p>
+            </div>
+          </div>
+          <div className='pokemon-details__div--stats'>
+            <div className='pokemon-details__div--stat'>
+              <p>Hp</p>
+              <p>100</p>
+            </div>
+            <div className='pokemon-details__div--stat'>
+              <p>Hp</p>
+              <p>100</p>
+            </div>
+            <div className='pokemon-details__div--stat'>
+              <p>Hp</p>
+              <p>100</p>
+            </div>
+          </div>
       </div>
     )
 }
