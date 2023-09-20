@@ -94,7 +94,7 @@ body {
 
 .main-container {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .pokebox__div {
@@ -211,7 +211,7 @@ body {
   background-color: black;
   display: flex;
   width: 100%;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
