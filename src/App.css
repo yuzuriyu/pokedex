@@ -9,8 +9,8 @@ body {
   background-image: linear-gradient(
           115deg,
           transparent 50%,
-          #fe4d3e 50% 58%,
-          #fa7246 58% 100%
+          #ff6035 50% 58%,
+          #ff7c43 58% 100%
       ),
       radial-gradient(
           circle at 20% 70%,
@@ -30,7 +30,7 @@ body {
   height: 50px;
   align-items: center;
   margin-top: 10px;
-  background: linear-gradient(115deg, #ddd3d8 60.8%, black 57.7%);
+  background: linear-gradient(115deg, #dad4d8 60.8%, #333333 57.7%);
 }
 
 .header__div--left {
@@ -41,7 +41,7 @@ body {
 
 .header__div--left > h1 {
   font-size: 1.6em;
-  color: black;
+  color: #3c3638;
   margin: 0;
   margin-left: 25px;
 }
@@ -49,9 +49,10 @@ body {
 .header__div--caught {
   display: flex;
   align-items: center;
-  background-color: gray;
+  background-color: #5b5b5b;
   border-radius: 5px;
   margin-left: 75px;
+  padding: 5px 10px;
 }
 
 .header__div--caught > img {
@@ -67,9 +68,10 @@ body {
 .header__div--uncaught {
   display: flex;
   align-items: center;
-  background-color: gray;
+  background-color: #5b5b5b;
   margin-left: 20px;
   border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .header__div--uncaught > p {
@@ -107,6 +109,16 @@ body {
   overflow: auto;
 }
 
+.pokebox__div--pc::-webkit-scrollbar {
+  width: 7px;
+  background-color: #910305;
+}
+
+.pokebox__div--pc::-webkit-scrollbar-thumb {
+  background-color: #fb7248;
+}
+
+
 .pokebox__div--box {
   display: flex;
   align-items: center;
@@ -119,7 +131,7 @@ body {
 }
 
 .pokebox__div--box:hover {
-  background: linear-gradient(115deg,#f0501d 35% , black 35%);
+  background: linear-gradient(135deg, #ff3d01 40% , black 40%);
 }
 
 .pokebox__div--box > h1 {
@@ -304,17 +316,22 @@ body {
 
 .search-container {
   width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
 }
 
 .search-bar {
-  width: 75%;
+  width: 50%;
   padding: 5px;
-  border: 3px solid rgb(238, 107, 47);
-  color: rgb(238, 107, 47);
+  color: white;
+  background-color: #333333;
+  border: none;
+  border-bottom: 1px solid white;
 }
 
 .search-bar::placeholder {
-  color: rgb(238, 107, 47); 
+  color: white;
 }
 
 .search-bar:focus {

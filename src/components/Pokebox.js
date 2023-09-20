@@ -5,7 +5,11 @@ const Pokebox = (props) => {
     return (
         <div className="pokebox__div">
           <div className="pokebox__div--pc">
-            {props.filteredPokemon.map((pokemon => <div className="pokebox__div--box" onClick={() => props.fetchSelectedPokeData(pokemon.name)}>
+            {props.filteredPokemon.map((pokemon => <div 
+              className="pokebox__div--box" 
+              onMouseEnter={() => props.fetchSelectedPokeData(pokemon.name)} 
+              onClick={() => props.handleToggleDetail()}
+            >
             <div className="pokebox__div--icon-no">
               <img 
                 src={pokemon.spriteUrl} 
@@ -25,7 +29,6 @@ const Pokebox = (props) => {
                   src={pokeballWhite} 
                   alt="pokeball white"
                 />
-             
               </div>))}
           </div>
         </div>

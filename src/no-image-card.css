@@ -1,4 +1,4 @@
-.pokemon-details__div {
+.no-image-card__div {
     width: 350px;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
    
 }
 
-.pokemon-details__div--top-most {
+.no-image-card__div--top-most {
     display: flex;
     border-radius: 5px;
     align-items: center;
@@ -22,63 +22,64 @@
   )
 }
 
-.pokemon-details__div--top-most > h1 {
+.no-image-card__div--top-most > h1 {
     font-size: 1em;
     color: white;
 }
 
-.pokemon-details__div--icon-no {
+.no-image-card__div--icon-no {
     display: flex;
     align-items: center;
 }
 
-.pokemon-details__div--icon-no > img {
+.no-image-card__div--icon-no > img {
     width: 35px;
     height: 35px;
     margin-right: 5px;
 }
 
-.pokemon-details__div--icon-no > h1 {
+.no-image-card__div--icon-no > h1 {
     font-size: 1em;
 }
 
-.pokemon-details__div--wrapper > img {
+.no-image-card__div--wrapper > img {
     width: 300px;
 }
 
-.pokemon-details__div--details {
+.no-image-card__div--details {
     display: flex;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
-.pokemon-details__div--left {
+.no-image-card__div--left {
     width: 50%;
     text-align: center;
     background-color: lightgray;
 }
 
-.pokemon-details__div--left > p {
+.no-image-card__div--left > p {
     margin: 10px;
 }
 
-.pokemon-details__div--right {
+.no-image-card__div--right {
     width: 50%;
     text-align: center;
     background-color: white;
 }
 
-.pokemon-details__div--right > p {
+.no-image-card__div--right > p {
     margin: 10px;
 }
 
-.pokemon-details__div--stats {
+.no-image-card__div--stats {
     display: flex;
     width: 100%;
     flex-direction: column;
 }
 
-.pokemon-details__div--stat {
+.no-image-card__div--stat {
     display: flex;
     width: 100%;
     background-color: #5a5a58;
@@ -86,21 +87,21 @@
     border-radius: 5px;
 }
 
-.pokemon-details__div--stat-name {
+.no-image-card__div--stat-name {
     width: 50%;
     text-align: center;
 }
 
-.pokemon-details__div--stat-name > p {
+.no-image-card__div--stat-name > p {
     color: white;
 }
 
-.pokemon-details__div--stat-value {
+.no-image-card__div--stat-value {
     width: 50%;
     text-align: center;
     border-radius: 5px;
 }
 
-.pokemon-details__div--stat-value > p {
+.no-image-card__div--stat-value > p {
     color: white;
 }

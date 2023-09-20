@@ -2,15 +2,19 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './App.css';
 import './pokemon-details.css';
+import './selected-pokemon.css';
+import './no-image-card.css';
 import Header from "./components/Header";
 import PokemonDetails from "./components/PokemonDetails";
-import PokemonList from "./components/Pokebox";
+import SelectedPokemon from "./components/SelectedPokemon";
+import Pokebox from "./components/Pokebox";
 import Footer from "./components/Footer";
 
 const App = () => {
   const [pokeData, setPokeData] = useState([]);
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [searchInput, setSearchInput] = useState("");
+  const [openDetail, setOpenDetail] = useState(false)
 
   useEffect(() => {
     const fetchPokeData = async () => {
@@ -57,30 +61,41 @@ const App = () => {
     return str.charAt(0).toUpperCase() + str.slice(1)
   }
 
+  const handleToggleDetail = () => {
+    setOpenDetail(prevStatus => !prevStatus)
+  }
+console.log(openDetail)
+console.log(selectedPokemon)
   return (
       <div className="app">
-        <Header />
+        <Header 
+          pokeData={pokeData}
+          filteredPokemon={filteredPokemon}
+          handleChange={handleChange}
+          searchInput={searchInput}
+        />
         <div className="main-container"> 
-       
           {selectedPokemon && (
             <PokemonDetails 
-              selectedName={selectedPokemon.name}
-              selectedID={selectedPokemon.id}
-              selectedHeight={selectedPokemon.height}
-              selectedWeight={selectedPokemon.weight}
-              capitalizeFirstLetter={capitalizeFirstLetter}
               selectedPokemon={selectedPokemon}
             />
           )}
-          <PokemonList 
+          <Pokebox 
             handleChange={handleChange}
             searchInput={searchInput}
             filteredPokemon={filteredPokemon}
             fetchSelectedPokeData={fetchSelectedPokeData}
             capitalizeFirstLetter={capitalizeFirstLetter}
             pokemonID={pokeData.pokemonID}
+            handleToggleDetail={handleToggleDetail}
           />
         </div>
+        {openDetail && selectedPokemon && (
+          <SelectedPokemon 
+            selectedPokemon={selectedPokemon}
+            handleToggleDetail={handleToggleDetail}
+          />
+        )}
         <Footer />
       </div>
   )

@@ -1,22 +1,25 @@
 import pokeballIcon from '../images/icon--pokeball--colored.png';
 import pokeballIconBlack from '../images/pokeball--black.png';
+import Search from './Search';
 
-const Header = () => {
+const Header = (props) => {
+    const discoveryNum = props.pokeData.length;
+
     return (
         <div className="header__div">
             <div className='header__div--left'>
-                <h1>Pokedex</h1>
+                <h1>Pokédex</h1>
                 <div className="header__div--caught">
                     <img src={pokeballIcon} alt="pokeball icon" />
-                    <p>quantity</p>
+                    <p>{discoveryNum}</p>
                 </div>
                 <div className="header__div--uncaught">
                     <img src={pokeballIconBlack} alt="pokeball black" />
-                    <p>quantity</p>
+                    <p>0</p>
                 </div>
             </div>
             <div className="header__div--right">
-                <p>A - Z</p>
+                <Search />
             </div>
         </div>
     )
