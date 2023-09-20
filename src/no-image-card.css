@@ -5,7 +5,6 @@
     position: relative;
     left: 100px;
     border: none;
-   
 }
 
 .no-image-card__div--top-most {
@@ -104,4 +103,16 @@
 
 .no-image-card__div--stat-value > p {
     color: white;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .no-image-card__div {
+        width: 100%;
+        left: 0;
+    }
+
+    .no-image-card__div--details {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

@@ -13,6 +13,7 @@ const SelectedPokemon = (props) => {
                     <img src={xIcon} alt='close button' onClick={() => props.handleToggleDetail()}  />
                     <NoImageCard selectedPokemon={props.selectedPokemon}/>
                 </div>
+                <button onClick={() => props.handleToggleDetail()}>Close</button>
             </div>
         </div>
         

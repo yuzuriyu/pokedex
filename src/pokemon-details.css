@@ -5,7 +5,6 @@
     position: relative;
     left: 100px;
     border: none;
-   
 }
 
 .pokemon-details__div--top-most {
@@ -103,4 +102,19 @@
 
 .pokemon-details__div--stat-value > p {
     color: white;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .pokemon-details__div {
+        width: 100%;
+        margin: auto;
+        left: 0;
+    }
+
+    .pokemon-details__div--wrapper > img {
+        width: 100px;
+    }
+
+    
+    
 }

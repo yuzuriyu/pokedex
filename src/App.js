@@ -64,23 +64,22 @@ const App = () => {
   const handleToggleDetail = () => {
     setOpenDetail(prevStatus => !prevStatus)
   }
-console.log(openDetail)
-console.log(selectedPokemon)
+
   return (
       <div className="app">
-        <Header 
+        {!openDetail && <Header 
           pokeData={pokeData}
           filteredPokemon={filteredPokemon}
           handleChange={handleChange}
           searchInput={searchInput}
-        />
+        />}
         <div className="main-container"> 
-          {selectedPokemon && (
+          {selectedPokemon && !openDetail && (
             <PokemonDetails 
               selectedPokemon={selectedPokemon}
             />
           )}
-          <Pokebox 
+          {!openDetail && <Pokebox 
             handleChange={handleChange}
             searchInput={searchInput}
             filteredPokemon={filteredPokemon}
@@ -88,7 +87,7 @@ console.log(selectedPokemon)
             capitalizeFirstLetter={capitalizeFirstLetter}
             pokemonID={pokeData.pokemonID}
             handleToggleDetail={handleToggleDetail}
-          />
+          />}
         </div>
         {openDetail && selectedPokemon && (
           <SelectedPokemon 
@@ -96,7 +95,7 @@ console.log(selectedPokemon)
             handleToggleDetail={handleToggleDetail}
           />
         )}
-        <Footer />
+        {!openDetail && <Footer />}
       </div>
   )
 }

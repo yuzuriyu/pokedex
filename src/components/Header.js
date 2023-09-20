@@ -3,6 +3,7 @@ import pokeballIconBlack from '../images/pokeball--black.png';
 import Search from './Search';
 
 const Header = (props) => {
+    console.log(props)
     const discoveryNum = props.pokeData.length;
 
     return (
@@ -19,7 +20,10 @@ const Header = (props) => {
                 </div>
             </div>
             <div className="header__div--right">
-                <Search />
+                <Search 
+                    handleChange={props.handleChange} 
+                    searchInput={props.searchInput}
+                />
             </div>
         </div>
     )

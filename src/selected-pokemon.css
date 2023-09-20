@@ -2,8 +2,6 @@
     width: 100%;
     height: 100vh;
     background: linear-gradient(115deg, #fff1ff 48%, #f3533b 48% 55%, #fb7248 55%);
-    position: absolute;
-    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center
@@ -11,10 +9,13 @@
 
 .selected-pokemon__div--main {
     display: flex;
-    width: 50%;
     margin: auto;
     align-items: center;
     justify-content: space-between;
+}
+
+.selected-pokemon__div--main > button {
+    display: none;
 }
 
 .selected-pokemon__div--left > img {
@@ -33,4 +34,39 @@
     cursor: pointer;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+
+    .selected-pokemon__div {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .selected-pokemon__div--main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .selected-pokemon__div--main > button {
+        display: block;
+        width: 90%;
+        background-color: black;
+        color: white;
+        padding: 15px 5px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 25px;
+    }
+    
+    .selected-pokemon__div--left > img {
+        width: 250px;
+    }
+    
+    .selected-pokemon__div--right {
+        width: 90%;
+    }
+    
+    .selected-pokemon__div--right > img {
+        display: none;
+    }
+}
 
