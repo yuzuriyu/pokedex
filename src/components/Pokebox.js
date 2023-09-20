@@ -14,7 +14,7 @@ const Pokebox = (props) => {
                 <h1>No. {pokemon.pokemonID}</h1>
               </div>
               <h1>{props.capitalizeFirstLetter(pokemon.name)}</h1>
-              <div className="pokebox__div--pokeballs">
+              
                 <img 
                   className="pokeball--black" 
                   src={pokeballBlack} 
@@ -25,7 +25,7 @@ const Pokebox = (props) => {
                   src={pokeballWhite} 
                   alt="pokeball white"
                 />
-              </div>
+             
               </div>))}
           </div>
         </div>

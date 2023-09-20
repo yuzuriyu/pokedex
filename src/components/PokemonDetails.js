@@ -1,8 +1,18 @@
 import pokeballWhite from '../images/pokeball--white.png';
 
-
 const PokemonDetails = (props) => {
-  console.log(props)
+  console.log(props.selectedPokemon)
+
+  const typeNames = props.selectedPokemon.types.map((type) =>
+    type.type.name.charAt(0).toUpperCase() + type.type.name.slice(1)
+  );
+
+  const statsValue = props.selectedPokemon.stats.map((stats) => stats.base_stat)
+  const statsName = props.selectedPokemon.stats.map((stats) => stats.stat.name)
+
+  const hpAttackDefenseValue = statsValue.slice(0, 3)
+  const hpAttackDefenseName = statsName.slice(0, 3)
+
     return (
         <div className="pokemon-details__div">
           <div className='pokemon-details__div--top-most'>
@@ -13,7 +23,7 @@ const PokemonDetails = (props) => {
               />
                 <h1>No. {props.selectedPokemon.id}</h1>
               </div>
-              <h1>{props.selectedPokemon.name}</h1>
+              <h1>{props.selectedPokemon.name.charAt(0).toUpperCase() + props.selectedPokemon.name.slice(1)}</h1>
                 <img 
                   className="pokeball--black" 
                   src={pokeballWhite}
@@ -30,23 +40,19 @@ const PokemonDetails = (props) => {
               <p>Weight</p>
             </div>
             <div className='pokemon-details__div--right'>
-              <p>Grass</p>
-              <p>Height</p>
-              <p>Weight</p>
+              <p>{typeNames.join(', ')}</p>
+              <p>{props.selectedPokemon.height} cm</p>
+              <p>{props.selectedPokemon.weight} lbs</p>
             </div>
           </div>
           <div className='pokemon-details__div--stats'>
             <div className='pokemon-details__div--stat'>
-              <p>Hp</p>
-              <p>100</p>
-            </div>
-            <div className='pokemon-details__div--stat'>
-              <p>Hp</p>
-              <p>100</p>
-            </div>
-            <div className='pokemon-details__div--stat'>
-              <p>Hp</p>
-              <p>100</p>
+              <div className='pokemon-details__div--stat-name'>
+                {hpAttackDefenseName.map((stats) =>   <p>{stats.charAt(0).toUpperCase() + stats.slice(1)}</p>)}
+              </div>
+              <div className='pokemon-details__div--stat-value'>
+                {hpAttackDefenseValue.map((stats) => <p>{stats}</p>)}
+              </div>
             </div>
           </div>
       </div>
