@@ -4,11 +4,14 @@ import './App.css';
 import './pokemon-details.css';
 import './selected-pokemon.css';
 import './no-image-card.css';
+import './toggle-menu.css';
 import Header from "./components/Header";
 import PokemonDetails from "./components/PokemonDetails";
 import SelectedPokemon from "./components/SelectedPokemon";
 import Pokebox from "./components/Pokebox";
 import Footer from "./components/Footer";
+
+
 
 const App = () => {
   const [pokeData, setPokeData] = useState([]);
@@ -51,7 +54,9 @@ const App = () => {
   const filteredPokemon = pokeData.filter((pokemon) => pokemon.name.includes(searchInput));
 
   const handleChange = (event) => {
-    setSearchInput(event.target.value);
+    if(event && event.target) {
+      setSearchInput(event.target.value)
+    }
   };
 
   const capitalizeFirstLetter = (str) => {
@@ -79,6 +84,7 @@ const App = () => {
               selectedPokemon={selectedPokemon}
             />
           )}
+         
           {!openDetail && <Pokebox 
             handleChange={handleChange}
             searchInput={searchInput}

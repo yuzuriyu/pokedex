@@ -1,0 +1,30 @@
+.toggle-menu__div {
+    width: 70%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    background-color: #dad4d8;
+}
+
+.toggle-menu__div--search {
+    display: flex;
+}
+
+.toggle-menu__div--search > input {
+    width: 100%;
+    height: 34px;
+    border: none;
+    color: gray;
+}
+
+.toggle-menu__div--search > input:focus {
+    outline: none;
+    padding-left: 15px;
+    color: gray;
+}
+
+.toggle-menu__div--search > input::placeholder {
+    padding-left: 15px;
+    color: gray;
+}

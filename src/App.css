@@ -29,19 +29,37 @@ body {
   align-items: center;
   margin-top: 10px;
   background: linear-gradient(115deg, #dad4d8 60.8%, #333333 57.7%);
+  justify-content: space-between;
+  position: relative;
 }
 
 .header__div--left {
-  width: 50%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 30%;
 }
 
-.header__div--left > h1 {
+.header__div--pokedex {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.header__div--pokedex > h1 {
   font-size: 1.6em;
   color: #3c3638;
   margin: 0;
-  margin-left: 25px;
+  margin-left: 15px;
+}
+
+.header__div--pokedex > img {
+  display: none;
+}
+
+.header__div--discovered {
+  display: flex;
+  align-items: center;
 }
 
 .header__div--caught {
@@ -49,7 +67,6 @@ body {
   align-items: center;
   background-color: #5b5b5b;
   border-radius: 5px;
-  margin-left: 75px;
   padding: 5px 10px;
 }
 
@@ -82,16 +99,6 @@ body {
   margin-right: 10px;
 }
 
-.header__div--right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.header__div--right > p {
-  color: white;
-}
-
 .main-container {
   display: flex;
   justify-content: flex-end;
@@ -117,7 +124,6 @@ body {
 .pokebox__div--pc::-webkit-scrollbar-thumb {
   background-color: #fb7248;
 }
-
 
 .pokebox__div--box {
   display: flex;
@@ -316,14 +322,13 @@ body {
 }
 
 .search-container {
-  width: 100%;
   display: flex;
   justify-content: flex-end;
   margin-right: 50px;
 }
 
 .search-bar {
-  width: 50%;
+  width: 300px;
   padding: 5px;
   color: white;
   background-color: #333333;
@@ -342,6 +347,30 @@ body {
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {
 
+  .header__div--left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header__div--pokedex > img {
+    display: block;
+    cursor: pointer;
+
+  }
+
+  .header__div--discovered {
+    margin-right: 15px;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
   .main-container {
     flex-direction: column;
     width: 90%;
@@ -356,10 +385,6 @@ body {
     width: 100%;
     height: 86vh;
     overflow: auto;
-  }
-
-  .search-bar {
-    display: none;
   }
 
   .footer__div {
