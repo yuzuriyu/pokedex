@@ -107,8 +107,18 @@
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {
     .no-image-card__div {
-        width: 100%;
-        left: 0;
+        width: 100%;    
+    }
+
+    .no-image-card__div--details {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 992px) and (orientation: landscape) {
+    .no-image-card__div {
+        width: 50%;    
     }
 
     .no-image-card__div--details {
