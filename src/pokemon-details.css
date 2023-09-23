@@ -139,3 +139,9 @@
         width: 100px;
     }
 }
+
+@media only screen and (min-width: 0) and (max-width: 767px) and (orientation: landscape) {
+    .pokemon-details__div {
+        display: none;
+    }
+}

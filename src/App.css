@@ -522,5 +522,159 @@ body {
   
 }
 
+@media only screen and (min-width: 0) and (max-width: 767px) and (orientation: landscape) { 
+  .header__div--left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 
+  .header__div--pokedex > img {
+    display: block;
+    cursor: pointer;
+
+  }
+
+  .header__div--discovered {
+    margin-right: 15px;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .main-container {
+    width: 90%;
+    display: flex;
+    margin: auto;
+  }
+
+  .pokebox__div {
+    width: 100%;
+  }
+
+  .pokebox__div--pc {
+    width: 70%;
+    height: 400px;
+    margin-left: auto;
+    overflow: auto;
+  }
+
+  .footer__div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: none;
+  }
+  
+  .footer__div--a > p {
+    display: none;
+  }
+  
+  
+  .footer__div--x > p {
+    display: none;
+  }
+  
+  
+  .footer__div--y > p {
+    display: none;
+  }
+  
+  
+  .footer__div--plus > p {
+    display: none;
+  }
+
+  .footer__div--b {
+    margin-right: 10px;
+  }
+  
+  .footer__div--b > p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) { 
+  .header__div--left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header__div--pokedex > img {
+    display: block;
+    cursor: pointer;
+
+  }
+
+  .header__div--discovered {
+    margin-right: 15px;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .main-container {
+    width: 90%;
+    display: flex;
+    margin: auto;
+  }
+
+  .pokebox__div {
+    width: 100%;
+  }
+
+  .pokebox__div--pc {
+    width: 60%;
+    height: 400px;
+    margin-left: auto;
+    overflow: auto;
+  }
+
+  .footer__div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: none;
+  }
+  
+  .footer__div--a > p {
+    display: none;
+  }
+  
+  
+  .footer__div--x > p {
+    display: none;
+  }
+  
+  
+  .footer__div--y > p {
+    display: none;
+  }
+  
+  
+  .footer__div--plus > p {
+    display: none;
+  }
+
+  .footer__div--b {
+    margin-right: 10px;
+  }
+  
+  .footer__div--b > p {
+    display: none;
+  }
+}
 
