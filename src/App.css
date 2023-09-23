@@ -523,6 +523,7 @@ body {
 }
 
 @media only screen and (min-width: 0) and (max-width: 767px) and (orientation: landscape) { 
+  
   .header__div--left {
     display: flex;
     justify-content: space-between;
@@ -558,7 +559,7 @@ body {
   }
 
   .pokebox__div--pc {
-    width: 70%;
+    width: 50%;
     height: 400px;
     margin-left: auto;
     overflow: auto;
@@ -601,6 +602,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) { 
+
   .header__div--left {
     display: flex;
     justify-content: space-between;
@@ -636,7 +638,7 @@ body {
   }
 
   .pokebox__div--pc {
-    width: 60%;
+    width: 50%;
     height: 400px;
     margin-left: auto;
     overflow: auto;

@@ -222,3 +222,116 @@
     
 }
 
+@media only screen and (min-width: 0) and (max-width: 767px) and (orientation: landscape) {
+    
+    .selected-pokemon__div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .selected-pokemon__div--main {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+    }
+    
+    .selected-pokemon__div--button {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+    
+    .selected-pokemon__div--button > img {
+        cursor: pointer;
+    }
+    
+    .selected-pokemon__div--img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    .selected-pokemon__div--img > img {
+        width: 35%;
+        margin-right: 25px;
+    }
+
+    .selected-pokemon__div--main > button {
+        display: none;
+        width: 100%;
+        margin-top: 25px;
+        background-color: black;
+        color: white;
+        padding: 15px 0;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .selected-pokemon__div--main > button:hover {
+        background-color: red;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+    
+    .selected-pokemon__div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .selected-pokemon__div--main {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+    }
+    
+    .selected-pokemon__div--button {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+    
+    .selected-pokemon__div--button > img {
+        cursor: pointer;
+    }
+    
+    .selected-pokemon__div--img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    .selected-pokemon__div--img > img {
+        width: 35%;
+        margin-right: 25px;
+    }
+
+    .selected-pokemon__div--main > button {
+        display: none;
+        width: 100%;
+        margin-top: 25px;
+        background-color: black;
+        color: white;
+        padding: 15px 0;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .selected-pokemon__div--main > button:hover {
+        background-color: red;
+    }
+}
