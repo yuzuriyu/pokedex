@@ -5,11 +5,13 @@ import './pokemon-details.css';
 import './selected-pokemon.css';
 import './no-image-card.css';
 import './toggle-menu.css';
+import './temporary.css';
 import Header from "./components/Header";
 import PokemonDetails from "./components/PokemonDetails";
 import SelectedPokemon from "./components/SelectedPokemon";
 import Pokebox from "./components/Pokebox";
 import Footer from "./components/Footer";
+import Temporary from "./components/Temporary";
 
 
 
@@ -79,10 +81,13 @@ const App = () => {
           searchInput={searchInput}
         />}
         <div className="main-container"> 
+        {!openDetail && !selectedPokemon &&  <Temporary />}
           {selectedPokemon && !openDetail && (
-            <PokemonDetails 
-              selectedPokemon={selectedPokemon}
-            />
+          
+            
+              <PokemonDetails selectedPokemon={selectedPokemon} />
+
+           
           )}
          
           {!openDetail && <Pokebox 
