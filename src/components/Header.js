@@ -1,6 +1,6 @@
 import pokeballIcon from '../images/icon--pokeball--colored.png';
 import pokeballIconBlack from '../images/pokeball--black.png';
-import menuIcon from '../images/logo--menu.png';
+import searchIcon from '../images/icon--search--mobile.png';
 import Search from './Search';
 import ToggleMenu from './ToggleMenu';
 import { useState } from 'react';
@@ -25,8 +25,8 @@ const Header = (props) => {
                     searchInput={props.searchInput}    
                 />}
                     <img 
-                        src={menuIcon} 
-                        alt='menu for mobile' 
+                        src={searchIcon} 
+                        alt='search for mobile' 
                         onClick={() => handleToggleMenu()} 
                     />
                     <h1>Pokédex</h1>

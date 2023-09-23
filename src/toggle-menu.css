@@ -1,8 +1,7 @@
 .toggle-menu__div {
-    width: 70%;
+    width: 280px;
     position: absolute;
-    top: 50px;
-    left: 0;
+    left: 70px;
     z-index: 1;
     background-color: #dad4d8;
 }
