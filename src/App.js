@@ -83,11 +83,7 @@ const App = () => {
         <div className="main-container"> 
         {!openDetail && !selectedPokemon &&  <Temporary />}
           {selectedPokemon && !openDetail && (
-          
-            
               <PokemonDetails selectedPokemon={selectedPokemon} />
-
-           
           )}
          
           {!openDetail && <Pokebox 
