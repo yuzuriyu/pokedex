@@ -39,6 +39,8 @@
 
 .selected-pokemon__div--main > button {
     display: none;
+    background-color: #ff3d01;
+    border: none;
 }
 
 @media only screen and (min-width: 0) and (max-width: 575px) {
@@ -88,15 +90,10 @@
         display: block;
         width: 100%;
         margin-top: 25px;
-        background-color: black;
         color: white;
         padding: 15px 0;
         border-radius: 25px;
         cursor: pointer;
-    }
-
-    .selected-pokemon__div--main > button:hover {
-        background-color: red;
     }
     
 }
@@ -148,15 +145,10 @@
         display: block;
         width: 100%;
         margin-top: 25px;
-        background-color: black;
         color: white;
         padding: 15px 0;
         border-radius: 25px;
         cursor: pointer;
-    }
-
-    .selected-pokemon__div--main > button:hover {
-        background-color: red;
     }
     
 }
@@ -209,15 +201,10 @@
         display: block;
         width: 100%;
         margin-top: 25px;
-        background-color: black;
         color: white;
         padding: 15px 0;
         border-radius: 25px;
         cursor: pointer;
-    }
-
-    .selected-pokemon__div--main > button:hover {
-        background-color: red;
     }
     
 }
@@ -267,15 +254,10 @@
         display: none;
         width: 100%;
         margin-top: 25px;
-        background-color: black;
         color: white;
         padding: 15px 0;
         border-radius: 25px;
         cursor: pointer;
-    }
-
-    .selected-pokemon__div--main > button:hover {
-        background-color: red;
     }
 }
 
@@ -324,14 +306,10 @@
         display: none;
         width: 100%;
         margin-top: 25px;
-        background-color: black;
         color: white;
         padding: 15px 0;
         border-radius: 25px;
         cursor: pointer;
     }
 
-    .selected-pokemon__div--main > button:hover {
-        background-color: red;
-    }
 }
