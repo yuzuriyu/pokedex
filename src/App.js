@@ -10,7 +10,6 @@ import Header from "./components/Header";
 import PokemonDetails from "./components/PokemonDetails";
 import SelectedPokemon from "./components/SelectedPokemon";
 import Pokebox from "./components/Pokebox";
-import Footer from "./components/Footer";
 import Temporary from "./components/Temporary";
 
 
