@@ -1,9 +1,8 @@
 .toggle-menu__div {
-    width: 280px;
+    width: 316px;
     position: absolute;
     left: 70px;
     z-index: 1;
-    background-color: #dad4d8;
 }
 
 .toggle-menu__div--search {
@@ -15,6 +14,7 @@
     height: 34px;
     border: none;
     color: gray;
+    border-radius: 20px;
 }
 
 .toggle-menu__div--search > input:focus {

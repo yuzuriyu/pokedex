@@ -74,6 +74,7 @@ const App = () => {
 
   return (
       <div className="app">
+        <img src="https://images7.alphacoders.com/105/1051827.jpg" className="wallpaper"/>
         {!openDetail && <Header 
           pokeData={pokeData}
           filteredPokemon={filteredPokemon}
@@ -102,7 +103,7 @@ const App = () => {
             handleToggleDetail={handleToggleDetail}
           />
         )}
-        {!openDetail && <Footer />}
+       
       </div>
   )
 }

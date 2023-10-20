@@ -1,5 +1,4 @@
 import pokeballIcon from '../images/icon--pokeball--colored.png';
-import pokeballIconBlack from '../images/pokeball--black.png';
 import searchIcon from '../images/icon--search--mobile.png';
 import Search from './Search';
 import ToggleMenu from './ToggleMenu';
@@ -29,19 +28,11 @@ const Header = (props) => {
                         alt='search for mobile' 
                         onClick={() => handleToggleMenu()} 
                     />
-                    <h1>Pokédex</h1>
                 </div>
-                <div className='header__div--discovered'>
-                    <div className="header__div--caught">
-                        <img src={pokeballIcon} alt="pokeball icon" />
-                        <p>{discoveryNum}</p>
-                    </div>
-                    <div className="header__div--uncaught">
-                        <img src={pokeballIconBlack} alt="pokeball black" />
-                        <p>0</p>
-                    </div>
-                </div>
-                
+                <div className="header__div--caught">
+                    <img src={pokeballIcon} alt="pokeball icon" />
+                    <p>{discoveryNum}</p>
+                </div>                
             </div>
             <Search 
                 handleChange={props.handleChange} 

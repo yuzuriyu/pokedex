@@ -39,8 +39,12 @@
 
 .selected-pokemon__div--main > button {
     display: none;
-    background-color: #ff3d01;
+    color: black;
+    background-color: white;
     border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 15px 0;
 }
 
 @media only screen and (min-width: 0) and (max-width: 575px) {
@@ -90,10 +94,6 @@
         display: block;
         width: 100%;
         margin-top: 25px;
-        color: white;
-        padding: 15px 0;
-        border-radius: 25px;
-        cursor: pointer;
     }
     
 }
@@ -145,10 +145,6 @@
         display: block;
         width: 100%;
         margin-top: 25px;
-        color: white;
-        padding: 15px 0;
-        border-radius: 25px;
-        cursor: pointer;
     }
     
 }
@@ -201,10 +197,6 @@
         display: block;
         width: 100%;
         margin-top: 25px;
-        color: white;
-        padding: 15px 0;
-        border-radius: 25px;
-        cursor: pointer;
     }
     
 }
@@ -251,13 +243,9 @@
     }
 
     .selected-pokemon__div--main > button {
-        display: none;
+        display: block;
         width: 100%;
         margin-top: 25px;
-        color: white;
-        padding: 15px 0;
-        border-radius: 25px;
-        cursor: pointer;
     }
 }
 
@@ -303,13 +291,9 @@
     }
 
     .selected-pokemon__div--main > button {
-        display: none;
+        display: block;
         width: 100%;
         margin-top: 25px;
-        color: white;
-        padding: 15px 0;
-        border-radius: 25px;
-        cursor: pointer;
     }
 
 }
