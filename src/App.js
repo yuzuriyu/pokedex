@@ -73,7 +73,7 @@ const App = () => {
 
   return (
       <div className="app">
-        <img src="https://images7.alphacoders.com/105/1051827.jpg" className="wallpaper"/>
+        <img src="https://images7.alphacoders.com/105/1051827.jpg" className="wallpaper" alt="wallpaper"/>
         {!openDetail && <Header 
           pokeData={pokeData}
           filteredPokemon={filteredPokemon}
